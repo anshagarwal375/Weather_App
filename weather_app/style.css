@@ -1,0 +1,99 @@
+/* Base styles */
+html {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Header Section */
+header {
+  height: 100px;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  width: 250px;
+}
+
+#input::placeholder {
+  color: #ccc;
+}
+
+#button {
+  padding: 0.5rem 1rem;
+  background-color: mediumseagreen;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Main Weather Section */
+main {
+  height: calc(100vh - 100px);
+  background-color: #234;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Weather container layout */
+.weather-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.temperature {
+  font-size: 1.5rem;
+}
+
+.location-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  font-size: 1rem;
+}
+
+/* Weather state (icon + condition) */
+.weather-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.emoji {
+  height: 80px;
+  width: 80px;
+}
+
+.condition {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+
+
